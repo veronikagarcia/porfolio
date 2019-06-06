@@ -96,6 +96,9 @@ a {
 a:hover {
 	filter: brightness(90%);
 }
+.contact-info a:hover {
+	color: var(--main-color)!important;
+}
 .horizontal-elements {
 	display: flex;
 	flex-wrap: wrap;
@@ -118,6 +121,8 @@ a:hover {
 	cursor: default;
 	font-size: 46px;
 	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
 }
 .main-sec-title {
 	font-size: 50%;
@@ -147,8 +152,11 @@ a:hover {
 .text-right {
 	text-align: right;
 }
+.text-center {
+	text-align: center;
+}
 .welcome-hola {
-	font-size: 80px;
+	font-size: 140px;
 	font-weight: 700;
 	color:var(--main-color);
 	font-family: 'Yesteryear', cursive;
@@ -163,9 +171,41 @@ a:hover {
 	top:0;
 	bottom: 0;
 }
-.pantone {
+.aboutme-close {
+	text-transform: uppercase;
+	right: 24px;
+	top:24px;
 	position: absolute;
+	font-size: 11px;
+	color:var(--gray03);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.aboutmelink {
+	font-size: 11px;
+	color:var(--gray01);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	height: 60px;
+	position: relative;
+}
+.aboutmelink:after {
+	content: '';
+	border-bottom: 1px solid var(--white-color);
+	width: 80px;
+	position: absolute;
+	left:0;
+	right: 0;
+	margin: auto;
+	top: 24px;
+}
+.aboutmelink:hover {
+	cursor: pointer;
+}
+.pantone {
 	right:40px;
+	position: absolute;
 	top:32px;
 	font-size: 11px;
 	color:var(--gray01);
@@ -184,6 +224,7 @@ a:hover {
  	animation-duration: 2s;
  	animation-delay: 1s;
  	animation-fill-mode: forwards;
+ 	box-shadow: inset 0 0 4px var(--gray04);
 }
 @keyframes content-container {
   0% {
@@ -216,7 +257,8 @@ a:hover {
 }
 .project-main-container {
 	background-color: var(--gray01);
-	border:1px solid var(--gray04);
+	border:1px solid var(--gray01);
+	text-align:center;
 }
 .content-welcome {
 	height:100%;
@@ -243,42 +285,116 @@ a:hover {
 .title-right .fa-arrow-down {
 	font-size: 22px;
 }
+.timezone {
+	position: absolute!important;
+	bottom: 18px;
+	left:20px;
+	opacity: 0;
+	color: var(--main-color);
+	font-size: 8px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transform: rotate(-6deg);
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	text-align: left;
+	line-height: 1.4em;
+	font-style: italic;
+	font-weight: 600;
+	transition: ease-out 1s;
+	-webkit-transition: ease-out 1s;
+}
+.map-container:hover .timezone {
+	display: block;
+	opacity: 1;
+}
+.map-container {
+	width: 300px;
+	margin:16px auto 0;
+	position: relative;
+}
+.map-container:hover .map-arg {
+	animation-name: map-arg;
+ 	animation-duration: 0.5s;
+ 	animation-fill-mode: forwards;
+}
+@keyframes map-arg {
+  0% {
+  	top: 0;
+  }
+  60% {
+  	top:-8px;
+  }
+  80% {
+  	top:8px;
+  }
+  100% {
+  	top:0;
+  }
+}
+.map-container:hover .map-ger {
+	animation-name: map-ger;
+ 	animation-duration: 0.3s;
+ 	animation-delay: 0.6s;
+ 	animation-fill-mode: forwards;
+ 	animation-iteration-count: 3;
+}
+@keyframes map-ger {
+  0% {
+  	opacity: 1;
+  }
+  50% {
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
+}
+.map-main {
+	width: 100%;
+}
+.map-arg, .map-ger {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left:0;
+}
 .about {
 	cursor: default;
 	background: var(--white-color);
 	width: 0;
 	min-width: 0;
-	height: calc(100% - 112px);
-	left:56px;
-	top:56px;
+	height: calc(100% - 84px);
+	left:42px;
+	top:42px;
 	box-sizing: border-box;
 	z-index: 10;
 	position: absolute;
-	display: flex;
-	align-items: center;
 	transition: linear 1s;
 	-webkit-transition: linear 0.3s;
 	overflow:hidden;
+	display: flex;
+	align-items: center;
+}
+.about-sec-container {
+	margin: auto;
 }
 .about-hover {
-	width: 50%;
+	width: calc(100% - 84px);
 	box-shadow: 0 0 4px var(--gray02);
+	overflow: auto;
+	padding: 24px 16px;
 }
 .content-container-onabout {
 	filter: grayscale(100%);
 }
 .about-text {
-	margin: 0 16px;
-	width: 310px;
+	margin: 0 auto;
+	width: 300px;
 	height: calc(100% - 32px);
 	font-size: 12px;
 	line-height: 18px;
-	left:24px;
-	top:24px;
-	align-items: center;
-	position: absolute;
-  	z-index: 15;
-  	color:var(--white-color);
+	text-align: center;
 }
 .about-text-hover {
 	display: grid;
@@ -308,6 +424,7 @@ a:hover {
 	background-color:rgba(240,240,240,.9);
 	padding: 16px;
 	box-sizing: border-box;
+	box-shadow: inset 0 0 4px var(--gray04);
 }
 	/*-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);*/
@@ -322,6 +439,8 @@ a:hover {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	max-width: 1100px;
+	margin: auto;
 }
 .portfolio-item {
 	background-color:var(--white-color);
@@ -333,6 +452,8 @@ a:hover {
 	transition: ease-out 1s;
 	-webkit-transition: ease-out 1s;
 	position: relative;
+	box-shadow: 0 0 4px var(--gray04);
+	text-align: left;
 }
 .portfolio-item:hover {
 	border: 1px solid var(--main-color);
@@ -372,9 +493,20 @@ a:hover {
 	position: absolute;
 	left: 0;
 	top: 4px;
-	width: 100%;
+	width: 0;
 	background: var(--main-color-opacity-20);
 	height: 12px;
+	animation-name: vermas;
+ 	animation-duration: 0.5s;
+ 	animation-fill-mode: forwards;
+}
+@keyframes vermas {
+  from {
+  	width: 0;
+  }
+  to {
+  	width: 100%;
+  }
 }
 .client-title {
 	color:var(--gray02);
@@ -513,19 +645,21 @@ footer {
 	margin: 8px 0;
 	max-width: 31%;
 }
-.project-container .desktop {
-	border:1px solid var(--gray02);
+.project-container .desktop, video {
+	border:1px solid var(--gray04);
 	padding: 8px;
 	box-sizing: border-box;
+	box-shadow: 0 0 4px var(--gray04);
 }
 .poster {
-	border:1px solid var(--gray02);
+	border:1px solid var(--gray04);
 	padding: 8px;
 	box-sizing: border-box;
 	margin: auto;
 	max-height: 800px;
 	background-color: var(--white-color);
 	max-width: 100%;
+	box-shadow: 0 0 4px var(--gray04);
 }
 .branding {
 	border:1px solid var(--gray04);
@@ -534,6 +668,7 @@ footer {
 	box-sizing: border-box;
 	margin: auto;
 	width: 100%;
+	box-shadow: 0 0 4px var(--gray04);
 }
 .mobile img {
 	width: 100%;
@@ -541,45 +676,58 @@ footer {
 	background-color: var(--white-color);
 	padding: 24px 8px 40px;
 	box-sizing: border-box;
+	box-shadow: 0 0 4px var(--gray04);
+}
+.branding-img-desktop {
+	display: inherit;
+	margin: 0 0 4px;
+}
+.branding-img-mobile {
+	display: none;
 }
 .project-main-title {
 	color: var(--gray02);
 	text-transform: uppercase;
 	font-size: 24px;
 	line-height: 1.2em;
+	font-weight: 200;
 }  
 .project-subtitle-container {
-	display: flex;
-	font-weight: 700;
+	font-weight: 200;
 	color:var(--main-color);
 	margin: 24px 0 0;
+	width: 100%;
+	text-transform: uppercase;
 }
 .project-date {
-	padding: 2px 8px;
 	letter-spacing: 0.1em;
-	background-color: var(--main-color);
-	color: var(--white-color);
-	font-size:11px;
-	margin: 0 8px 0 0;
-	min-width: 102px;
+	color: var(--main-color);
+	font-size:10px;
+	margin: 8px auto;
+	position: relative;
+	width: fit-content;
+	width: -webkit-fit-content;
+}
+.project-date:after {
+	content: '';
+	border-bottom:1px solid var(--main-color);
+	display: block;
+	width: 100%;
+	padding: 4px 0 0;
 }
 .project-description {
-	max-width: 400px;
-	width: 60%;
 	font-size: 13px;
 	line-height: 1.5em;
 	margin: 4px 8px 16px 0;
+	width: 100%;
 } 
 .project-container-code {
-	padding: 8px;
-	margin: 8px 8px -13px 0;
-	width: 100px;
+	margin: 8px;
+	width: 100%;
 	line-height: 1.6em;
 	z-index: 10;
 	position: relative;
-	background-color: var(--white-color);
-	opacity: 0.9;
-	border:1px solid var(--gray02);
+	color: var(--gray02);
 }
 .separator {
 	margin: 40px 0;
@@ -607,6 +755,9 @@ footer {
 	header, footer {
 		width: calc(100% - 40px);
 		left: 20px;
+	}
+	.welcome-hola {
+		font-size: 80px;
 	}
 	.portfolio-welcome {
 		width:100%;
@@ -661,23 +812,7 @@ footer {
 		margin: 8px 0;
 		max-width: 100%;
 	}
-	.project-container-code {
-		margin: 8px 0;
-		width: 100%;
-	}
-	.project-description {
-		width: 100%;
-	}
-	.project-subtitle-container {
-		display: block;
-	}
-	.project-subtitle {
-		margin: 8px 0;
-	}
-	.project-date {
-		margin: 0;
-	}
-	.pantone {
+	.pantone, .aboutmelink {
 		display: none;
 	}
 	.content-container-onabout {
@@ -714,6 +849,16 @@ footer {
 	}
 	.fa-github {
 		margin: 0 0 0 26px;
+	}
+	.branding-img-desktop {
+		display: none;
+	}
+	.branding-img-mobile {
+		display: inherit;
+		margin: 0 0 4px;
+	}
+	.portfolio-filters {
+		line-height: 32px;
 	}
 }
 @media only screen and (max-height: 450px) {

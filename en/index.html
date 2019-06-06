@@ -11,7 +11,7 @@
 
     <title>Verónica Garcia | Graphic designer</title>
 
-    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/styles.css?v=01" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -59,24 +59,42 @@
 
 <body>
     <header>
-        <div class="logo" id="logo">Verónica Garcia</div>
+        <div class="logo">Verónica Garcia</div>
         <div class="language-label"><a href="../index.html">En español por favor</a></div>
         <div class="language-label-mobile"><a href="../index.html">Español</a></div>
     </header>
+
     <div id="about-container" class="about">
-        <div id="about-text" class="about-text">
+        <div id="close-aboutme" class="aboutme-close">Close</div>
+        <div class="about-sec-container">
+          <div id="about-text" class="about-text">
+            <div class="project-date">2003 | 2012</div>
             I'm a graduated Graphic Designer at University<br>of Buenos Aires.<br>
-            I've been working in companies, agencies, freelance and remote since 2005 for Argentina<br>and Germany.<br>
-            Also I was Typography 1 teaching assistant per 4 years at University of Buenos Aires.
+            <div class="project-date">2006 | 2012</div>
+            I worked in companies, agencies and freelance.<br>
+            <div class="map-container">
+              <div class="timezone">Argentina<br>time (ART):<br>UTC -3</div>
+              <img src="../map.svg" class="map-main">
+              <img src="../map-arg.svg" class="map-arg">
+              <img src="../map-ger.svg" class="map-ger">
+            </div>
+            <div class="project-date">2013 | Today</div>
+            I've been working remote from Argentina<br>for a German company.
+            <div class="project-date">2011-2014</div>
+            Also I was Typography 1 teaching assistant<br>at University of Buenos Aires.
+          </div>
         </div>
     </div>
     <div class="welcome-hola">Hello</div>
     <div class="content-container">
         <div class="content-welcome">
           <div class="portfolio-welcome">
-              <a href="#portfolio" class="main-title text-right">
-                  UX/UI Design<br>+ Layout<br>Development<br><div class="main-sec-title">Publishing + Branding</div><i class="fa fa-angle-down"></i>
-              </a>
+              <div class="text-center">
+                <div id="aboutme" class="aboutmelink">About me</div>
+                <a href="#portfolio" class="main-title">
+                    UX/UI Design<br>+ Layout<br>Development<br><div class="main-sec-title">Publishing + Branding</div><i class="fa fa-angle-down"></i>
+                </a>
+              </div>
               <div class="pantone">
                   Main color: <a href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">Pantone color of the year 2019</a>
               </div>
@@ -113,7 +131,7 @@
 
     
 </body>
-<script src="../js/vegarcia.js" type="text/javascript"></script>
+<script src="../js/vegarciajs.js" type="text/javascript"></script>
 
 
 </html>

@@ -11,7 +11,7 @@
 
     <title>Verónica Garcia | Diseñadora Gráfica</title>
 
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles.css?v=01" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -60,15 +60,29 @@
 
 <body>
     <header>
-        <div class="logo" id="logo">Verónica Garcia</div>
+        <div class="logo">Verónica Garcia</div>
         <div class="language-label"><a href="en/index.html">In English please</a></div>
         <div class="language-label-mobile"><a href="en/index.html">English</a></div>
     </header>
     <div id="about-container" class="about">
-        <div id="about-text" class="about-text">
+        <div id="close-aboutme" class="aboutme-close">Close</div>
+        <div class="about-sec-container">
+          <div id="about-text" class="about-text">
+            <div class="project-date">2003 | 2012</div>
             Soy diseñadora gráfica recibida en la Universidad de Buenos Aires.<br>
-            Trabajé en compañías, agencias y en modo freelance y remoto desde 2005 para Argentina<br>y Alemania.<br>
-            También fui ayudante en la materia Tipografía I (Cosgaya) durante 4 años en UBA.
+            <div class="project-date">2006 | 2012</div>
+            Trabajé en compañías, agencias<br>y en modo freelance.<br>
+            <div class="map-container">
+              <div class="timezone">Horario<br>Argentina<br>(ART): UTC -3</div>
+              <img src="map.svg" class="map-main">
+              <img src="map-arg.svg" class="map-arg">
+              <img src="map-ger.svg" class="map-ger">
+            </div>
+            <div class="project-date">2013 | Hoy</div>
+            Trabajo remoto desde Argentina para<br>una compañía Alemana.
+            <div class="project-date">2011-2014</div>
+            También fui ayudante en la materia Tipografía I (Cosgaya) en la Universidad de Buenos Aires.
+          </div>
         </div>
     </div>
     <div class="welcome-hola">Hola</div>
@@ -76,9 +90,12 @@
       <div class="content-welcome">
           
           <div class="portfolio-welcome">
-              <a href="#portfolio" class="main-title text-right">
-                  Diseño UX/UI<br>+ Maquetado<br><div class="main-sec-title">Editorial + Branding</div><i class="fa fa-angle-down"></i>
-              </a>
+              <div class="text-center">
+                <div id="aboutme" class="aboutmelink">Sobre mi</div>
+                <a href="#portfolio" class="main-title">
+                    Diseño UX/UI<br>+ Maquetado<br><div class="main-sec-title">Editorial + Branding</div><i class="fa fa-angle-down"></i>
+                </a>
+              </div>
               <div class="pantone">
                   Color principal: <a href="https://www.pantone.com/color-intelligence/color-of-the-year/color-of-the-year-2019" target="_blank">Pantone color of the year 2019</a>
               </div>
@@ -115,7 +132,7 @@
 
     
 </body>
-<script src="js/vegarcia.js" type="text/javascript"></script>
+<script src="js/vegarciajs.js" type="text/javascript"></script>
 
 
 </html>
