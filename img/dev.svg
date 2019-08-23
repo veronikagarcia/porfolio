@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 142.2 187.2" style="enable-background:new 0 0 142.2 187.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF7E74;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'Montserrat-Regular';}
+	.st3{font-size:11px;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;}
+	.st6{font-family:'RobotoMono-Bold';}
+	.st7{font-size:5px;}
+	.st8{letter-spacing:17;}
+</style>
+<g>
+	<g>
+		<rect x="2.4" y="5.9" class="st0" width="138" height="170.7"/>
+	</g>
+	<text transform="matrix(1 0 0 1 16.1878 32.027)" class="st1 st2 st3">&gt;</text>
+	<g>
+		<line class="st4" x1="126.5" y1="26.4" x2="122.1" y2="31.1"/>
+		<line class="st4" x1="122.1" y1="26.4" x2="126.5" y2="31.1"/>
+	</g>
+	<rect x="16.3" y="48.2" class="st5" width="110.1" height="88.7"/>
+	<text transform="matrix(1 0 0 1 16.2854 61.9813)" class="st1 st6 st7">&lt;div class=”modal-container”&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 72.9813)" class="st1 st6 st7 st8"> </text>
+	<text transform="matrix(1 0 0 1 36.3854 72.9813)" class="st1 st6 st7">&lt;div class=”space-between”&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 83.9813)" class="st1 st6 st7 st8">  </text>
+	<text transform="matrix(1 0 0 1 56.4854 83.9813)" class="st1 st6 st7">&lt;div class=”title”&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 94.9813)" class="st1 st6 st7 st8">  </text>
+	<text transform="matrix(1 0 0 1 56.4854 94.9813)" class="st1 st6 st7">&lt;div class=”close-x”&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 105.9813)" class="st1 st6 st7 st8"> </text>
+	<text transform="matrix(1 0 0 1 36.3854 105.9813)" class="st1 st6 st7">&lt;/div&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 116.9813)" class="st1 st6 st7 st8"> </text>
+	<text transform="matrix(1 0 0 1 36.3854 116.9813)" class="st1 st6 st7">&lt;img src=”modal-img”/&gt;</text>
+	<text transform="matrix(1 0 0 1 16.2854 127.9813)" class="st1 st6 st7">&lt;/div&gt;</text>
+</g>
+</svg>

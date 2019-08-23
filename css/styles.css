@@ -171,6 +171,51 @@ a:hover {
 	top:0;
 	bottom: 0;
 }
+.welcome-title-container {
+	grid-column: 2 / 2;
+  	grid-row: 1;
+}
+.welcome-img-container {
+	position: relative;
+	width: 100%;
+	height: 328px;
+	grid-column: 1 / 2;
+  	grid-row: 1;
+}
+.welcome-img-position {
+	float: right;
+}
+.welcome-img {
+	width: 140px;
+	position: absolute;
+	top: 0;
+	right: 40px;
+}
+.welcome-img-01 {
+	margin: 0;
+	position: relative;
+	animation-name: welcome-img;
+ 	animation-duration: 0.6s;
+ 	animation-delay: 2.6s;
+ 	animation-fill-mode: forwards;
+ 	opacity: 0;
+}
+.welcome-img-02 {
+	margin: 78px 40px 0 0;
+	animation-name: welcome-img;
+	animation-duration: 0.6s;
+ 	animation-delay: 3.4s;
+ 	animation-fill-mode: forwards;
+ 	opacity: 0;
+}
+@keyframes welcome-img {
+  0% {
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 1;
+  }
+}
 .aboutme-close {
 	text-transform: uppercase;
 	right: 24px;
@@ -189,25 +234,26 @@ a:hover {
 	letter-spacing: 1px;
 	height: 60px;
 	position: relative;
+	transition: ease-out 1s;
+	-webkit-transition: ease-out 1s;
 }
 .aboutmelink:after {
 	content: '';
 	border-bottom: 1px solid var(--white-color);
-	width: 80px;
+	width: 149px;
 	position: absolute;
 	left:0;
-	right: 0;
-	margin: auto;
 	top: 24px;
 }
 .aboutmelink:hover {
 	cursor: pointer;
+	letter-spacing: 4px;
 }
 .pantone {
 	right:40px;
 	position: absolute;
 	top:32px;
-	font-size: 11px;
+	font-size: 9px;
 	color:var(--gray01);
 	opacity: 0.75;
 }
@@ -460,6 +506,20 @@ a:hover {
 	cursor: pointer;
 	filter: inherit!important;
 }
+.portfolio-item-personal {
+	background-color:var(--main-color-opacity);
+	color:var(--white-color);
+	border: 1px solid var(--main-color);
+}
+.portfolio-item-personal .client-title, .portfolio-item-personal .project-title, .portfolio-item-personal .project-code {
+	color:rgba(255,255,255,.75)!important;
+}
+.portfolio-item-personal:hover .client-title, .portfolio-item-personal:hover .project-title,  .portfolio-item-personal:hover .tools, .portfolio-item-personal:hover .project-code {
+	color:var(--white-color)!important;
+}
+.portfolio-item-personal .tools {
+	background-color: var(--main-color-opacity)!important;
+}
 .projects-container:hover .portfolio-item:not(:hover) {
 	filter: blur(1px);
 	transition: ease-out 1s;
@@ -651,6 +711,10 @@ footer {
 	box-sizing: border-box;
 	box-shadow: 0 0 4px var(--gray04);
 }
+.horizvideosx3 video.mobile {
+	max-height: 500px;
+	height: -webkit-fill-available;
+}
 .poster {
 	border:1px solid var(--gray04);
 	padding: 8px;
@@ -741,6 +805,9 @@ footer {
 	.portfolio-welcome-open {
 		height:calc(100% + 90px)!important;
 	}
+	.welcome-img-container {
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 394px) {
@@ -758,6 +825,9 @@ footer {
 	}
 	.welcome-hola {
 		font-size: 80px;
+	}
+	.horizontal-between {
+		justify-content: center;
 	}
 	.portfolio-welcome {
 		width:100%;
@@ -859,6 +929,14 @@ footer {
 	}
 	.portfolio-filters {
 		line-height: 32px;
+	}
+	.welcome-title-container {
+		grid-column: 1 / 2;
+	  	grid-row: 1;
+	  	text-align: center
+	}
+	.welcome-img-container {
+		display: none;
 	}
 }
 @media only screen and (max-height: 450px) {
