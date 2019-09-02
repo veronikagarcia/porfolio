@@ -29,18 +29,21 @@ $(document).ready(function() {
 		$("#uxui-tag").addClass("dev-tag-selected");
 		$("#dev-tag").removeClass("dev-tag-selected");
 		$(".dev-item").hide();
+		$(".square-item").hide();
 		$(".uxui-item").show();
 	});
 	$("#dev-tag").click(function () {
 		$("#dev-tag").addClass("dev-tag-selected");
 		$("#uxui-tag").removeClass("dev-tag-selected");
 		$(".uxui-item").hide();
+		$(".square-item").hide();
 		$(".dev-item").show();
 	});
 	$("#all-tag").click(function () {
 		$("#uxui-tag").removeClass("dev-tag-selected");
 		$("#dev-tag").removeClass("dev-tag-selected");
 		$(".uxui-item").show();
+		$(".square-item").show();
 		$(".dev-item").show();
 	});
 });
